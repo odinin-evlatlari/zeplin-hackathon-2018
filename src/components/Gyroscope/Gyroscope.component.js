@@ -21,7 +21,7 @@ class Gyroscope extends PureComponent {
 
     this.speedFactor = initialFactor;
   };
-
+  // Hero Mode On:
   trackGyrometer = (eventHandler) => {
     return ({ x, y, z }) => {
       const { started, throwed } = this.state;
@@ -34,7 +34,6 @@ class Gyroscope extends PureComponent {
       if (started && z > 3) {
         onStartSpin();
         this.setState({
-          started: false,
           throwed: true,
         }, () => setTimeout(() => {
           startSpinAnimation();
@@ -48,6 +47,7 @@ class Gyroscope extends PureComponent {
 
       eventHandler(this.position)
     }
+    // Hero Mode Off:
   }
 
   componentDidMount() {
@@ -62,11 +62,12 @@ class Gyroscope extends PureComponent {
       )
     )
   }
-
+  // Hero Mode On:
   render() {
     const { children } = this.props;
     return children({...this.state, resetGyro: this.resetGyro });
   }
+  // Hero Mode Off:
 }
 
 export default Gyroscope;

@@ -9,7 +9,7 @@ class Intro extends Component {
     {
       title: 'MJOLNIR',
       content: 'Sahibine ışıltılı güçler ve ölümsüzlük bahşetmek için yaratıldı ama ona sahip olan kişinin amansız bir düşmanı vardır…',
-      image: Images.mjolnir,
+      image: Images.mjolnirBig,
       subImage: Images.bolt,
       levels: [20, 30, 5, 20, 10],
     },
@@ -46,34 +46,34 @@ class Intro extends Component {
         <View level={8} style={styles.imagesWrapper}>
           <Image source={option.image} />
         </View>
-        <View level={option.levels[0]} style={styles[`subImageWrapper0`]}>
+        <View level={option.levels[0]} style={styles.subImageWrapper0}>
           <Animated.Image
             source={option.subImage}
-            style={styles[`subImage0`]}
+            style={styles.subImage0}
           />
         </View>
-        <View level={option.levels[1]} style={styles[`subImageWrapper1`]}>
+        <View level={option.levels[1]} style={styles.subImageWrapper1}>
           <Animated.Image
             source={option.subImage}
-            style={styles[`subImage1`]}
+            style={styles.subImage1}
           />
         </View>
-        <View level={option.levels[2]} style={styles[`subImageWrapper2`]}>
+        <View level={option.levels[2]} style={styles.subImageWrapper2}>
           <Animated.Image
             source={option.subImage}
-            style={styles[`subImage2`]}
+            style={styles.subImage2}
           />
         </View>
-        <View level={option.levels[3]} style={styles[`subImageWrapper3`]}>
+        <View level={option.levels[3]} style={styles.subImageWrapper3}>
           <Animated.Image
             source={option.subImage}
-            style={styles[`subImage3`]}
+            style={styles.subImage3}
           />
         </View>
-        <View level={option.levels[4]} style={styles[`subImageWrapper4`]}>
+        <View level={option.levels[4]} style={styles.subImageWrapper4}>
           <Animated.Image
             source={option.subImage}
-            style={styles[`subImage4`]}
+            style={styles.subImage4}
           />
         </View>
       </View>

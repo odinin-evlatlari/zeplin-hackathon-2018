@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { Asset, AppLoading, Font } from 'expo';
 
@@ -11,17 +11,17 @@ console.disableYellowBox = true;
 
 const store = createStore();
 
-class App extends React.Component {
+class App extends Component {
   state = {
     isReady: false,
   };
-
+  // Hero Mode On:
   cacheResourcesAsync = async () => {
     Font.loadAsync(Fonts);
     const cacheImages = Object.keys(Images).map(key => Asset.fromModule(Images[key]).downloadAsync());
-    return Promise.all(cacheImages)
+    return Promise.all(cacheImages);
   }
-
+  // Hero Mode Off:
   render() {
     const { isReady } = this.state;
     if (!isReady) {

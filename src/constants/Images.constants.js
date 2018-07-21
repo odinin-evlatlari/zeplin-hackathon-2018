@@ -12,6 +12,10 @@ export default {
   circle1: require('../../assets/circle1.png'),
   circle2: require('../../assets/circle2.png'),
   circle3: require('../../assets/circle3.png'),
-  mjornil: require('../../assets/mjornil.png'),
+  tinymjolnir: require('../../assets/tinymjolnir.png'),
   flip: require('../../assets/flip.png'),
+  mjolnirBig: require('../../assets/mjolnirbig.png'),
+  warning: require('../../assets/Rectangle-3.png'),
+  backButton: require('../../assets/backButton.png'),
+  dead: require('../../assets/group2.png'),
 }

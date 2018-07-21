@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -7,7 +7,7 @@ import MainNavigation from './src/navigators/mainNavigation';
 
 console.disableYellowBox = true;
 
-class AppStateNavigation extends React.Component {
+class AppStateNavigation extends Component {
 
   componentDidMount () {
     const { appInitStart } = this.props;
