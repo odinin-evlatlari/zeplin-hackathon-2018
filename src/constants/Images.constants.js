@@ -1,0 +1,17 @@
+export default {
+  loading: require('../../assets/loading.png'),
+  simsek: require('../../assets/simsek.png'),
+  sprite1: require('../../assets/sprite1.png'),
+  mjolnir: require('../../assets/mjolnir.png'),
+  bolt: require('../../assets/bolt.png'),
+  time: require('../../assets/time.png'),
+  skull: require('../../assets/skull.png'),
+  phone: require('../../assets/phone.png'),
+  clockCopy3: require('../../assets/clockCopy3.png'),
+  thor: require('../../assets/thor.png'),
+  circle1: require('../../assets/circle1.png'),
+  circle2: require('../../assets/circle2.png'),
+  circle3: require('../../assets/circle3.png'),
+  mjornil: require('../../assets/mjornil.png'),
+  flip: require('../../assets/flip.png'),
+}
